@@ -18,6 +18,7 @@ code {
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
+  min-height: 100vh;
 }
 
 /* ------------------------------
@@ -105,4 +106,22 @@ textarea:focus {
 
 .search input:focus {
   outline: none;
+}
+
+/* ------------------------------
+            Header
+------------------------------ */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dark-mode {
+  background-color: black;
+}
+
+.dark-mode h1 {
+  color: white;
 }
