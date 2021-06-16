@@ -49,3 +49,33 @@ code {
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
+
+/* ------------------------------
+            Add-note
+------------------------------ */
+
+.note.new-note {
+  background-color: #67d7cc;
+}
+
+textarea {
+  background-color: #67d7cc;
+  border: none;
+  resize: none;
+}
+
+textarea:focus{
+  outline: none;
+}
+
+.save{
+  background-color: #e1e1e1;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+
+.save:hover{
+  background-color: #ededed;
+  cursor: pointer;
+}
