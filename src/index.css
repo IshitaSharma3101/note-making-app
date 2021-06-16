@@ -32,6 +32,7 @@ code {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  white-space: pre-wrap;
 }
 
 .note-footer {
@@ -64,18 +65,18 @@ textarea {
   resize: none;
 }
 
-textarea:focus{
+textarea:focus {
   outline: none;
 }
 
-.save{
+.save {
   background-color: #e1e1e1;
   border: none;
   border-radius: 15px;
   padding: 5px 10px;
 }
 
-.save:hover{
+.save:hover {
   background-color: #ededed;
   cursor: pointer;
 }
