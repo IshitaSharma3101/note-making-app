@@ -125,3 +125,9 @@ textarea:focus {
 .dark-mode h1 {
   color: white;
 }
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
