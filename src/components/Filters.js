@@ -15,7 +15,9 @@ const Filters = ({ handleSearchMonth, handleSearchYear }) => {
         className='button'
         onChange={(e) => handleSearchMonth(e.target.value)}>
         <option value='select'>Select Month</option>
-        <option value='01'>January</option>
+        <option className='option' value='01'>
+          January
+        </option>
         <option value='02'>February</option>
         <option value='03'>March</option>
         <option value='04'>April</option>
