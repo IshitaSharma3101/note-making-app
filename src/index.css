@@ -172,6 +172,18 @@ textarea:focus {
   color: white;
 }
 
+.dark-mode .container {
+  background-color: black;
+}
+
+.dark-mode .navbar-light .navbar-brand {
+  color: #eb4375;
+}
+
+.dark-mode .navbar-light .navbar-brand:hover {
+  color: #eb4375;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -200,6 +212,7 @@ textarea:focus {
 
 .navbar-light .navbar-nav .nav-link {
   color: #db2777;
+  font-weight: bolder;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
