@@ -1,27 +1,24 @@
+import { Navbar, Nav } from "react-bootstrap";
+
 const Header = ({
   handleToggleDarkMode,
   handleNewestFirst,
   handleOldestFirst,
 }) => {
   return (
-    <div className='header'>
-      <h1>Note Making App</h1>
-      <div className='nav'>
-        <button className='save' onClick={() => handleNewestFirst()}>
-          Newest First
-        </button>
-        <button className='save' onClick={() => handleOldestFirst()}>
-          Oldest First
-        </button>
-        <button
-          className='save'
-          onClick={() =>
+    <Navbar bg='light' expand='lg'>
+      <Navbar.Brand>Note Making App</Navbar.Brand>
+      <Navbar.Toggle aria-controls='basic-navbar-nav' />
+      <Navbar.Collapse id='basic-navbar-nav'>
+        <Nav className='mr-auto'>
+          <Nav.Link onClick={() => handleNewestFirst()}>Newest First</Nav.Link>
+          <Nav.Link onClick={() => handleOldestFirst()}>Oldest First</Nav.Link>
+          <Nav.Link onClick={() =>
             handleToggleDarkMode((previousDarkMode) => !previousDarkMode)
-          }>
-          Toggle Mode
-        </button>
-      </div>
-    </div>
+          }>Toggle Mode</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 };
 
